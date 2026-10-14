@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/dotnet/sdk:10.0
+WORKDIR /workspace
+COPY Directory.Build.props global.json Nezzen.sln ./
+COPY src/Nezzen.Application/Nezzen.Application.csproj src/Nezzen.Application/
+COPY src/Nezzen.Audio/Nezzen.Audio.csproj src/Nezzen.Audio/
+COPY src/Nezzen.Core/Nezzen.Core.csproj src/Nezzen.Core/
+COPY src/Nezzen.Desktop/Nezzen.Desktop.csproj src/Nezzen.Desktop/
+COPY src/Nezzen.Infrastructure/Nezzen.Infrastructure.csproj src/Nezzen.Infrastructure/
+COPY tests/Nezzen.Core.Tests/Nezzen.Core.Tests.csproj tests/Nezzen.Core.Tests/
+COPY tests/Nezzen.Infrastructure.Tests/Nezzen.Infrastructure.Tests.csproj tests/Nezzen.Infrastructure.Tests/
+RUN dotnet restore Nezzen.sln
+COPY src/ src/
+COPY tests/ tests/
+RUN dotnet build Nezzen.sln -c Release --no-restore
+ENTRYPOINT ["dotnet", "test", "Nezzen.sln", "-c", "Release", "--no-build", "--no-restore", "--nologo"]

@@ -1,0 +1,14 @@
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.tests
+    network_mode: none
+  benchmark:
+    profiles: [benchmark]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.benchmarks
+    network_mode: none
+    mem_limit: 2g
+    cpus: 2

@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Core", "src/Nezzen.Core/Nezzen.Core.csproj", "{72B02BC4-5EC7-4D6A-8E9C-E66A8FD146C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Application", "src/Nezzen.Application/Nezzen.Application.csproj", "{3DA585C8-28D9-4ED8-B3F9-9C398C0A9AE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Infrastructure", "src/Nezzen.Infrastructure/Nezzen.Infrastructure.csproj", "{D550CD03-0207-4F0E-981F-F266EF2759F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Audio", "src/Nezzen.Audio/Nezzen.Audio.csproj", "{B7B776CA-53A3-4BF7-87D8-87F3A75D862F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Desktop", "src/Nezzen.Desktop/Nezzen.Desktop.csproj", "{2D072801-B3FD-465E-AF12-AE454DD113BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Core.Tests", "tests/Nezzen.Core.Tests/Nezzen.Core.Tests.csproj", "{0E76EC22-0DBD-41E2-B411-F0A0CA0C840F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nezzen.Infrastructure.Tests", "tests/Nezzen.Infrastructure.Tests/Nezzen.Infrastructure.Tests.csproj", "{948CC7ED-7E64-402D-9968-C40E3C6980EA}"
+EndProject
+Global
+ GlobalSection(SolutionConfigurationPlatforms) = preSolution
+ Debug|Any CPU = Debug|Any CPU
+ Release|Any CPU = Release|Any CPU
+ EndGlobalSection
+ GlobalSection(ProjectConfigurationPlatforms) = postSolution
+ {72B02BC4-5EC7-4D6A-8E9C-E66A8FD146C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {72B02BC4-5EC7-4D6A-8E9C-E66A8FD146C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {72B02BC4-5EC7-4D6A-8E9C-E66A8FD146C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {72B02BC4-5EC7-4D6A-8E9C-E66A8FD146C1}.Release|Any CPU.Build.0 = Release|Any CPU
+ {3DA585C8-28D9-4ED8-B3F9-9C398C0A9AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {3DA585C8-28D9-4ED8-B3F9-9C398C0A9AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {3DA585C8-28D9-4ED8-B3F9-9C398C0A9AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {3DA585C8-28D9-4ED8-B3F9-9C398C0A9AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+ {D550CD03-0207-4F0E-981F-F266EF2759F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {D550CD03-0207-4F0E-981F-F266EF2759F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {D550CD03-0207-4F0E-981F-F266EF2759F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {D550CD03-0207-4F0E-981F-F266EF2759F4}.Release|Any CPU.Build.0 = Release|Any CPU
+ {B7B776CA-53A3-4BF7-87D8-87F3A75D862F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {B7B776CA-53A3-4BF7-87D8-87F3A75D862F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {B7B776CA-53A3-4BF7-87D8-87F3A75D862F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {B7B776CA-53A3-4BF7-87D8-87F3A75D862F}.Release|Any CPU.Build.0 = Release|Any CPU
+ {2D072801-B3FD-465E-AF12-AE454DD113BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {2D072801-B3FD-465E-AF12-AE454DD113BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {2D072801-B3FD-465E-AF12-AE454DD113BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {2D072801-B3FD-465E-AF12-AE454DD113BB}.Release|Any CPU.Build.0 = Release|Any CPU
+ {0E76EC22-0DBD-41E2-B411-F0A0CA0C840F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {0E76EC22-0DBD-41E2-B411-F0A0CA0C840F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {0E76EC22-0DBD-41E2-B411-F0A0CA0C840F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {0E76EC22-0DBD-41E2-B411-F0A0CA0C840F}.Release|Any CPU.Build.0 = Release|Any CPU
+ {948CC7ED-7E64-402D-9968-C40E3C6980EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+ {948CC7ED-7E64-402D-9968-C40E3C6980EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+ {948CC7ED-7E64-402D-9968-C40E3C6980EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+ {948CC7ED-7E64-402D-9968-C40E3C6980EA}.Release|Any CPU.Build.0 = Release|Any CPU
+ EndGlobalSection
+EndGlobal
