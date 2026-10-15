@@ -5,6 +5,8 @@ Reproductor de escritorio local, modular y original, orientado a Windows y con v
 ## Estado: fase 2
 Escáner incremental real con registro/habilitación de múltiples carpetas, búsqueda recursiva de audio, lectura de metadatos, comparación rápida, hashes selectivos, movimientos verificados, vista previa y aplicación transaccional en SQLite. La interfaz mínima permite analizar, revisar y confirmar cambios; no hay motor de reproducción ni búsqueda FTS todavía.
 
+> **Nueva versión web local (React + Python) en desarrollo:** ver [docs/V2_REACT_PYTHON.md](docs/V2_REACT_PYTHON.md). La app .NET permanece intacta.
+
 ## Requisitos y comandos
 SDK .NET 10 estable para desarrollo nativo. Docker/Compose son opcionales; la aplicación instalada no los necesita.
 

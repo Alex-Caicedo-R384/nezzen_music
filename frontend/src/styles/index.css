@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+:root {
+  --accent-h: 275;
+  --accent: oklch(0.68 0.19 var(--accent-h));
+  --accent-soft: oklch(0.68 0.19 var(--accent-h) / 0.16);
+  --accent-fg: oklch(0.99 0 0);
+}
+
+[data-theme='dark'] {
+  --bg: oklch(0.15 0.012 285);
+  --surface: oklch(0.19 0.014 285);
+  --surface-2: oklch(0.235 0.016 285);
+  --line: oklch(0.3 0.016 285);
+  --fg: oklch(0.96 0.005 285);
+  --fg-muted: oklch(0.7 0.02 285);
+  --fg-faint: oklch(0.52 0.02 285);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: oklch(0.975 0.004 285);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.955 0.006 285);
+  --line: oklch(0.88 0.008 285);
+  --fg: oklch(0.2 0.02 285);
+  --fg-muted: oklch(0.45 0.02 285);
+  --fg-faint: oklch(0.6 0.015 285);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-faint: var(--fg-faint);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-fg: var(--accent-fg);
+  --font-sans: 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, 'Inter', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 8px;
+  border: 2px solid var(--bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
